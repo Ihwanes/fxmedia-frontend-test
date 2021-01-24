@@ -7,6 +7,7 @@
     <title>Swimming Pool</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="home.css">
@@ -14,6 +15,8 @@
 
 <body>
     <script src="jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
@@ -62,32 +65,18 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="home-1.png" class="d-block w-100" alt="..." style="max-height: 630px;">
-            </div>
-            <div class="carousel-item">
-                <img src="home-2.png" class="d-block w-100" alt="..." style="max-height: 630px;">
-            </div>
-            <div class="carousel-item">
-                <img src="ui-lib.JPG" class="d-block w-100" alt="..." style="max-height: 630px;">
-            </div>
+    <!-- OwlCarousel2 -->
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="home-1.png" class="d-block w-100" alt="...">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
+        <div class="item">
+            <img src="home-2.png" class="d-block w-100" alt="...">
+        </div>
+        <!-- <div class="item-video"><a class="owl-video"
+                href="stock-footage-brunette-woman-swimming-underwater-in-slow-motion.mp4"></a></div> -->
+        <div class="item-video"><a class="owl-video"
+                href="stock-footage-two-asian-boys-racing-with-their-father-in-a-pool.mp4"></a></div>
     </div>
 
     <!-- From this, we will use container -->
@@ -172,6 +161,27 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            merge: true,
+            loop: true,
+            margin: 10,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            responsive: {
+                480: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 
 
