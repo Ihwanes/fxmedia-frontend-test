@@ -76,3 +76,13 @@ input::-webkit-input-placeholder {
 #demo-2 input::-webkit-input-placeholder {
 	color: transparent;
 }
+
+.footer-container{
+    background-color: #FCD44D;
+}
+
+.footer-container-2{
+    background-color: #141826;
+    color: white;
+    text-align: center;
+}
