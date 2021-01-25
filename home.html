@@ -82,46 +82,165 @@
     <!-- From this, we will use container -->
     <div class="container">
         <div class="row">
-            <h1>Blog Post</h1>
-            <!-- Card -->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="home-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
+            <!-- Pills -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Featured</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+                        aria-controls="pills-profile" aria-selected="false">Events</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">Publication</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <!-- Featured Card -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="ui-lib.JPG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="home-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <!-- Events Card -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="ui-lib.JPG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="ui-lib.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.</p>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="ui-lib.JPG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This card has even longer content than the first to show
+                                        that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional
+                                        content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="home-1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -170,20 +289,40 @@
                 <!-- Column 1 -->
                 <div class="col">
                     <div class="row">
-                        <p>45 Tanjung Rhu Rod</p>
+                        <div class="col">
+                            <img src="Asset1.png" alt="">
+                        </div>
+                        <div class="col">
+                            <p>45 Tanjung Rhu Rod</p>
+                            <p>Singapore 436899</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="Asset2.png" alt="">
                     </div>
                     <div class="row">
-                        <p>Singapore 436899</p>
+                        <h2>Email Newsletters</h2>
                     </div>
-                    <div class="row"></div>
-                    <div class="row"></div>
+                    <div class="row">
+                        <p>Subscribe to receive news in your inbox.</p>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email Address">
+                            </div>
+                            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                        </form>
+                    </div>
                 </div>
                 <!-- Column 2 -->
                 <div class="col">
                     <div class="row">
                         <p>Home</p>
                     </div>
-                    <div class="row"></div>
+                    <br>
                     <div class="row">
                         <p>About Us</p>
                     </div>
@@ -191,28 +330,24 @@
                         <p>Brief History</p>
                     </div>
                     <div class="row">
-                        <p></p>
+                        <p>Club Milestones</p>
                     </div>
                     <div class="row">
-                        <p></p>
+                        <p>Swimming Milestones</p>
                     </div>
                     <div class="row">
-                        <p></p>
+                        <p>Management Committe & Club Management</p>
                     </div>
                     <div class="row">
-                        <p></p>
+                        <p>Club Directory</p>
                     </div>
+                    <br>
+                    <br>
                     <div class="row">
+                        <p>Club Buzz </p>
                     </div>
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                        <p></p>
-                    </div>
-                    <div class="row">
-                    </div>
-                    <div class="row">
-                    </div>
+                    <br>
+                    <br>
                     <div class="row">
                         <p>Facilities</p>
                     </div>
@@ -243,13 +378,11 @@
                     <div class="row">
                         <p>Find Out More</p>
                     </div>
-                    <div class="row">
-                    </div>
+                    <br>
                     <div class="row">
                         <p>Banquet</p>
                     </div>
-                    <div class="row">
-                    </div>
+                    <br>
                     <div class="row">
                         <p>Photo Gallery</p>
                     </div>
@@ -301,8 +434,7 @@
                     <div class="row">
                         <p>Straits of Malacca</p>
                     </div>
-                    <div class="row">
-                    </div>
+                    <br>
                     <div class="row">
                         <p>What's New</p>
                     </div>

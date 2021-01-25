@@ -78,11 +78,17 @@ input::-webkit-input-placeholder {
 }
 
 .footer-container{
+    padding: 1.5em;
     background-color: #FCD44D;
+    font-weight: bold;
 }
 
 .footer-container-2{
     background-color: #141826;
     color: white;
     text-align: center;
+}
+
+.navbar-text{
+    font-weight: bold;
 }
